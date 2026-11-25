@@ -1,0 +1,384 @@
+:root {
+    color-scheme: dark;
+    --bs-primary: #c8641a;
+    --bs-primary-rgb: 200, 100, 26;
+    --accent: #c8641a;
+    --accent-dark: #a24d10;
+    --accent-darker: #7d3a0a;
+    --accent-light: #f0a64e;
+    --page-background: #000000;
+    --surface: #1d1611;
+    --surface-alt: #2a2019;
+    --text: #f4eadc;
+    --heading: #ffd9a8;
+    --muted: #b9a78f;
+    --border: #4d3b2b;
+    --input-bg: #120d09;
+    --input-border: #6b5239;
+    --focus-ring: rgba(240, 166, 78, 0.35);
+}
+
+/* ---------- Pohja ---------- */
+body,
+body.bg-light {
+    min-height: 100vh;
+    color: var(--text);
+    background: var(--page-background) !important;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.55;
+}
+
+a {
+    color: var(--accent-light);
+}
+
+a:hover {
+    color: #ffc27a;
+}
+
+/* ---------- Yläpalkki ---------- */
+.navbar.bg-primary {
+    background: linear-gradient(110deg, #2b1507, #6a3210) !important;
+    border-bottom: 1px solid #8a4a1c;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+.navbar .container {
+    min-height: 3.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    color: #ffe3bf;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.btn-outline-light {
+    --bs-btn-color: #ffe3bf;
+    --bs-btn-border-color: #d9a066;
+    --bs-btn-hover-color: #2b1507;
+    --bs-btn-hover-bg: #ffd9a8;
+    --bs-btn-hover-border-color: #ffd9a8;
+    --bs-btn-active-color: #2b1507;
+    --bs-btn-active-bg: #f0a64e;
+    --bs-btn-active-border-color: #f0a64e;
+}
+
+/* ---------- Kortit ---------- */
+.card {
+    color: var(--text);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.85rem;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.7) !important;
+}
+
+.card-title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading);
+    font-weight: 650;
+    letter-spacing: -0.015em;
+}
+
+/* ---------- Lomakkeet ---------- */
+.form-label {
+    margin-bottom: 0.4rem;
+    color: #e8d3b8;
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    min-height: 2.75rem;
+    color: var(--text);
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 0.55rem;
+}
+
+.form-select {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23f0a64e' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+textarea.form-control {
+    min-height: 6rem;
+}
+
+.form-control::placeholder {
+    color: #8b7a66;
+}
+
+.form-control:focus,
+.form-select:focus {
+    color: var(--text);
+    background-color: var(--input-bg);
+    border-color: var(--accent-light);
+    box-shadow: 0 0 0 0.22rem var(--focus-ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+    color: #8b7a66;
+    background-color: var(--surface-alt);
+}
+
+/* Selaimen automaattinen täyttö */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--text);
+    box-shadow: 0 0 0 1000px var(--input-bg) inset;
+}
+
+/* ---------- Painikkeet ---------- */
+.btn {
+    min-height: 2.5rem;
+    border-radius: 0.55rem;
+    font-weight: 600;
+    transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+}
+
+.btn-sm {
+    min-height: 2rem;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #b85410;
+    --bs-btn-border-color: #b85410;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d4691f;
+    --bs-btn-hover-border-color: #d4691f;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #8f410c;
+    --bs-btn-active-border-color: #8f410c;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #f0a64e;
+    --bs-btn-border-color: #c8812f;
+    --bs-btn-hover-color: #1d1611;
+    --bs-btn-hover-bg: #f0a64e;
+    --bs-btn-hover-border-color: #f0a64e;
+    --bs-btn-active-color: #1d1611;
+    --bs-btn-active-bg: #d98f35;
+    --bs-btn-active-border-color: #d98f35;
+}
+
+.btn-outline-danger {
+    --bs-btn-color: #ff8a7a;
+    --bs-btn-border-color: #c4473a;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #c4473a;
+    --bs-btn-hover-border-color: #c4473a;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #a23327;
+    --bs-btn-active-border-color: #a23327;
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: #cdbba3;
+    --bs-btn-border-color: #7a6650;
+    --bs-btn-hover-color: #1d1611;
+    --bs-btn-hover-bg: #cdbba3;
+    --bs-btn-hover-border-color: #cdbba3;
+    --bs-btn-disabled-color: #8b7a66;
+    --bs-btn-disabled-border-color: #5a4a3a;
+}
+
+.btn:not(:disabled):hover {
+    transform: translateY(-1px);
+}
+
+.btn:focus-visible,
+a:focus-visible {
+    outline: 3px solid rgba(240, 166, 78, 0.6);
+    outline-offset: 2px;
+}
+
+/* ---------- Taulukot ---------- */
+.table-responsive {
+    border: 1px solid var(--border);
+    border-radius: 0.65rem;
+    background-color: var(--surface);
+}
+
+.table {
+    --bs-table-color: var(--text);
+    --bs-table-bg: transparent;
+    --bs-table-border-color: var(--border);
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.table > thead > tr > th {
+    color: #ffd9a8;
+    background-color: #3a2a1c;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.table > tbody > tr > * {
+    color: var(--text);
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.table-sm > tbody > tr > * {
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-bg-type: #261d16;
+}
+
+.table tbody tr:hover > * {
+    --bs-table-bg-state: #3d2c1d;
+}
+
+/* ---------- Ilmoitukset ---------- */
+.alert {
+    border: 1px solid transparent;
+    border-radius: 0.65rem;
+}
+
+.alert-danger {
+    color: #ffc9c0;
+    background-color: #4a1a14;
+    border-color: #8a3228;
+}
+
+.alert-info {
+    color: #ffe3bf;
+    background-color: #3a2a14;
+    border-color: #7a5a24;
+}
+
+.text-muted {
+    color: var(--muted) !important;
+}
+
+small.text-muted {
+    display: inline-block;
+    margin-top: 0.75rem;
+}
+
+/* ---------- Kalenteri (FullCalendar) ---------- */
+#kalenteri {
+    --fc-border-color: #4d3b2b;
+    --fc-page-bg-color: #1d1611;
+    --fc-neutral-bg-color: #2a2019;
+    --fc-neutral-text-color: #b9a78f;
+    --fc-today-bg-color: rgba(240, 166, 78, 0.14);
+    --fc-now-indicator-color: #ff6b57;
+    --fc-button-text-color: #fff;
+    --fc-button-bg-color: #b85410;
+    --fc-button-border-color: #b85410;
+    --fc-button-hover-bg-color: #d4691f;
+    --fc-button-hover-border-color: #d4691f;
+    --fc-button-active-bg-color: #8f410c;
+    --fc-button-active-border-color: #8f410c;
+    --fc-event-bg-color: #c8641a;
+    --fc-event-border-color: #e8934a;
+    --fc-event-text-color: #fff;
+    color: var(--text);
+}
+
+#kalenteri .fc-toolbar-title {
+    color: var(--heading);
+    font-size: 1.25rem;
+}
+
+#kalenteri .fc-col-header-cell-cushion,
+#kalenteri .fc-timegrid-slot-label-cushion,
+#kalenteri .fc-timegrid-axis-cushion,
+#kalenteri .fc-daygrid-day-number {
+    color: #e8d3b8;
+    text-decoration: none;
+}
+
+#kalenteri .fc-button {
+    min-height: 0;
+    border-radius: 0.45rem;
+    font-weight: 600;
+}
+
+#kalenteri .fc-button:not(:disabled):hover {
+    transform: none;
+}
+
+#kalenteri .fc-button-primary:disabled {
+    background-color: #5a3a1e;
+    border-color: #5a3a1e;
+}
+
+#kalenteri .fc-event {
+    border-radius: 0.35rem;
+}
+
+/* ---------- Mobiili ---------- */
+@media (max-width: 575.98px) {
+    .container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navbar .container {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.65rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .navbar .container > .d-flex {
+        width: 100%;
+        align-items: flex-start !important;
+        flex-wrap: wrap;
+        gap: 0.5rem 0.75rem !important;
+    }
+
+    .navbar .container > .d-flex > span {
+        width: 100%;
+    }
+
+    main.container.py-5 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .card-body {
+        padding: 1.15rem !important;
+    }
+
+    .table > tbody > tr > * {
+        padding-right: 0.65rem;
+        padding-left: 0.65rem;
+    }
+
+    #kalenteri .fc-toolbar {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

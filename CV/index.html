@@ -1,49 +1,65 @@
-<html>
-    <head>
-          
-    </head>
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oma portfolio</title>
+    <link rel="stylesheet" href="koe.css">
+</head>
+<body>
 
-    <body>
-        <h1>Aapo</h1>
-        <h2>Nyyssönen</h2>
-        <h3>Harrastukseni</h3>
-        <ul>
-            <li>Pelaaminen</li>
-            <li>Musiikin kuuntelu</li>
-            <li>Salilla käynti</li>
-        </ul>
-        <h3>Päivän askareet</h3>
-        <ol>
-            <li>Herääminen</li>
-            <li>Kouluun tuleminen</li>
-            <li>Koodaaminen</li>
-            <li>pelaaminen</li>
-            <li>Nukkuminen</li>
-        </ol>
-        <p>
-            Tämä on minun ensimmäinen html tehtävä ja toivon
-            että nämä loput tehtävät tulevat olemaan mukavia.
-            c# koodaus oli helppoa lopussa joten toivon että
-            tämäkin tulee helpottumaan lopussa.
-            </p>
-            <p>
-            Koodaaminen on tapa ratkaista ongelmia loogisesti
-            ja luovasti samaan aikaan. Ohjelmoija kirjoittaa
-            ohjeita tietokoneelle, joka suorittaa ne tarkasti
-            askel askeleelta. Pienistä riveistä syntyy kokonaisuuksia,
-            kuten sovelluksia, pelejä tai verkkosivuja, jotka helpottavat
-            arkea ja viihdyttävät käyttäjiä.
+<header>
+    <h1>Aapo Nyyssönen</h1>
+    <p>Full Stack -kehittäjä</p>
+</header>
 
-            Oppiminen alkaa usein perusasioista, kuten muuttujista
-            ja silmukoista, mutta kehittyessä mukaan tulee yhä
-            monimutkaisempia <b> Virheiden </b> tekeminen on
-            luonnollinen osa <i>, ja niiden korjaaminen </i> opettaa
-            eniten. Koodaaminen kehittää ongelmanratkaisutaitoja ja
-            kärsivällisyyttä, ja se voi avata ovia monenlaisiin uramahdollisuuksiin.
-        </p>
-        <a href="https://www.sakky.fi">Sakky </a>
-        <a href="about.html">toinen html</a>
-        <img src ="lataus.jpg" alt="Kuva miehen naamasta jonka yläpuolella lukee Goon">
-    </body>
+<nav>
+    <ul>
+        <li><a href="#tietoa">Tietoa minusta</a></li>
+        <li><a href="#projektit">Projektit</a></li>
+        <li><a href="#aikataulu">Aikataulu</a></li>
+        <li><a href="#yhteys">Yhteys</a></li>
+    </ul>
+</nav>
 
+<section id="tietoa">
+    <h2>Tietoa minusta</h2>
+    <p>
+        Moi, minun nimi on Aapo Nyyssönen ja olen 17-vuotias. Olen opiskellut nyt melkein 2 vuotta Savon ammattiopistossa TvT-alalla.
+        Olen aina tykännyt pelata pelejä ja siitä on tullut halu alkaa tekemään omia pelejä. Kiinnostuksen takia pääsin tälle alalle ja 
+        olen tykännyt tästä alasta todella paljon. Allalla olen oppinut monia koodi-kieliä, kuten C#, HTML, CSS, PHP, SQL ja JAVASCRIPT.
+    </p>
+
+    <img src="aapo.jpg" alt="Profiilikuva Aaposta">
+</section>
+
+<section id="projektit">
+    <h2>Projektit</h2>
+
+    <div class="projekti">
+        <h3>Luokan varaus</h3>
+        <p>Sivusto, missä opiskelijat voi katsella luokka varauksia,
+            opettajat voi tehdä, muokata ja poistaa omia varauksia ja 
+            admin joka voi tehdä, muokata ja poistaa kaikkia varauksia.</p>
+        <a href="src/index.php">Katso projekti</a>
+    </div>
+
+    <div class="projekti">
+        <h3>Simple laskuri</h3>
+        <p>Yksinkertainen laskin, millä voi vähentää, plussata, kertoa
+            ja jakaa..</p>
+        <a href="">Katso projekti</a>
+    </div>
+</section>
+
+<footer id="yhteys">
+    <h2>Yhteystiedot</h2>
+    <p>Sähköposti: aapo.nyyssonenn@gmail.com</p>
+    <p>
+        Sosiaalinen media:
+        <a href="https://www.instagram.com/georgiahty" target="_blank">Instagram</a>
+    </p>
+</footer>
+
+</body>
 </html>
